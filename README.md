@@ -1,50 +1,36 @@
-name: Docker CI Pipeline
+# Docker CI/CD Pipeline Project
 
+This project demonstrates a complete CI/CD pipeline using Docker, GitHub Actions, Buildkite, and Kubernetes.
 
+## Technologies Used
 
-on:
+- Node.js
+- Docker
+- GitHub Actions
+- Buildkite
+- Kubernetes
+- Git
+- YAML
 
-&#x20; push:
+## Project Architecture
 
-&#x20;   branches:
+Developer → GitHub → CI Pipeline → Docker Build → Kubernetes Deployment
 
-&#x20;     - main
+## Features
 
+- Automated CI/CD pipeline
+- Docker containerization
+- GitHub Actions workflow automation
+- Buildkite integration
+- Kubernetes deployment manifests
+- Automated build and deployment process
 
+## Project Structure
 
-jobs:
-
-&#x20; docker:
-
-&#x20;   runs-on: ubuntu-latest
-
-
-
-&#x20;   steps:
-
-&#x20;   - name: Checkout Code
-
-&#x20;     uses: actions/checkout@v4
-
-
-
-&#x20;   - name: Setup Node.js
-
-&#x20;     uses: actions/setup-node@v4
-
-&#x20;     with:
-
-&#x20;       node-version: '18'
-
-
-
-&#x20;   - name: Install Dependencies
-
-&#x20;     run: npm install
-
-
-
-&#x20;   - name: Build Docker Image
-
-&#x20;     run: docker build -t docker-pipeline .
-
+```bash
+Dockerfile
+index.js
+package.json
+k8s/
+.github/workflows/
+README.md
