@@ -1,0 +1,6 @@
+node_modules/
+.kube/
+build/
+dist/
+DockerDesktop/
+*.log
