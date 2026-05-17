@@ -2,19 +2,19 @@ steps:
   - label: "Hello world"
     command: "echo Hello"
     agents:
-      queue: "default"
+      queue: "default01"
 
   - label: "Install Dependencies"
     command: "npm install"
     agents:
-      queue: "default"
+      queue: "default01"
 
   - label: "Run Node App"
     command: "node index.js"
     agents:
-      queue: "default"
+      queue: "default01"
 
   - label: "Build Docker Image"
     command: "docker build -t docker-pipeline ."
     agents:
-      queue: "default"
+      queue: "default01"
