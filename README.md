@@ -37,3 +37,4 @@ README.md
 Buildkite pipeline triggered successfully
 Buildkite success test
 Buildkite final test
+Buildkite agent connected successfully
